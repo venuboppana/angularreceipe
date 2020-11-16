@@ -6,6 +6,7 @@ import { ShoppingListComponent } from './shoppinglist.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 import { SharedModule } from '../shared/shared.module';
 import { LoggingService } from '../logging.service';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
    declarations: [ShoppingListComponent,
@@ -18,7 +19,8 @@ import { LoggingService } from '../logging.service';
                  path: '', component: ShoppingListComponent
             },
         ]),
-        SharedModule
+        SharedModule,
+        CommonModule
     ],
    // providers: [LoggingService]
 })
